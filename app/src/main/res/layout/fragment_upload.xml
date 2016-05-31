@@ -1,0 +1,79 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.overdrivedx.fragment.UploadFragment"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:id="@+id/titlebar"
+        android:background="@drawable/title_background"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="P"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="22sp"
+            android:onClick="showHomeFragment"
+            android:textColor="@color/textlightblue"
+            android:gravity="center"
+            android:clickable="true"
+            android:id="@+id/home"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Upload a Meme"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:id="@+id/camera"
+
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlebar"
+        android:layout_centerInParent="true"
+        android:id="@+id/relativeLayout">
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uploadPic"
+        android:clickable="true"
+        android:background="@drawable/upload_img_circle"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload something funny"
+        android:layout_marginTop="5sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@+id/uploadPic"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/upload_text"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0"
+    android:paddingTop="7sp"
+    android:paddingBottom="15sp"
+    android:paddingLeft="5sp"
+    android:paddingRight="5sp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/update_title"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10sp"
+        android:text="An update is available"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/update_title"
+        android:id="@+id/update_txt"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        />
+    <Button
+        android:id="@+id/update_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:background="@drawable/green_btn"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/update_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        />
+</RelativeLayout>

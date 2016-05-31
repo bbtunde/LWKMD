@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LWKMD</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="loading">Fetching Feed...</string>
+    <string name="show_overlay">Touch a picture to show options.</string>
+    <string name="just_a_second">Just a second...</string>
+    <string name="keep_updated">Keep LWKMD up-to-date</string>
+</resources>

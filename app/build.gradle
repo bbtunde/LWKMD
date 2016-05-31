@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'lwkmd'
+            keyPassword 'melodyAK01*'
+            storeFile file('/Users/babatundedennis/Documents/__DO_NOT_ALTER/lwkmd.jks')
+            storePassword 'melodyAK01*'
+        }
+    }
+    compileSdkVersion 21
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.overdrivedx.lwkmd2"
+        minSdkVersion 14
+        targetSdkVersion 21
+        versionCode 2
+        versionName "2.1.0"
+        renderscriptTargetApi 21
+        renderscriptSupportModeEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.android.support:support-v4:22.2.0'
+    compile 'com.google.android.gms:play-services:7.8.0'
+    compile files('libs/aws/aws-android-sdk-core-2.2.4.jar')
+    compile files('libs/aws/aws-android-sdk-s3-2.2.4.jar')
+    compile 'com.github.nkzawa:socket.io-client:0.5.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile files('libs/volley.jar')
+}
